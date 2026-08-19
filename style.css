@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+
+:root {
+   --primary-color: #ff6b6b;
+   --secondary-color: #4ecdc4;
+   --background-color: #f7fff7;
+   --text-color: #1a1a1a;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   background: linear-gradient(60deg, #075bec, #1e00ffa9, #8d4ecd);
+   color: var(--background-color);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 4rem;
+   height: 100vh;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+}
+
+.input-additem {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   flex-wrap: wrap;
+}
+
+#taskInput,
+#addTaskButton {
+   border: none;
+   font-size: 1rem;
+   outline: none;
+   padding: 1rem;
+   border-radius: 50px;
+   background: #ffff;
+   cursor: pointer;
+}
+
+#addTaskButton:hover {
+   background: var(--primary-color);
+   color: #fff;
+}
+
+#taskListUl {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   padding: 1rem;
+}
+
+#taskListUl li {
+   list-style-type: none;
+   font-size: 1.4rem;
+   text-transform: capitalize;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#taskListUl li label {
+   display: flex;
+   align-items: center;
+   gap: 0.75rem;
+}
+
+#taskListUl li input {
+   width: 1.1rem;
+   height: 1.1rem;
+   cursor: pointer;
+}
+
+#taskListUl li button {
+   border: none;
+   padding: 0.5rem 0.75rem;
+   border-radius: 0.5rem;
+   background: var(--primary-color);
+   color: #fff;
+   cursor: pointer;
+}
+
+#taskListUl li.completed span {
+   text-decoration: line-through;
+   opacity: 0.65;
+}
